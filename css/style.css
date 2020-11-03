@@ -30,13 +30,14 @@
     transform: translate(0%, -50%);
 }
 
-.keywords {
+.keywords-container {
     height: 400px;
     width: 800px;
     background: #e5e7e9;
+    padding: 70px 180px;
 }
 
-.keywords--position {
+.keywords-container--position {
     position: absolute;
     float: left;
     top: 50%;
@@ -53,9 +54,23 @@
 
 .title--appearance {
     font-size: 2.3rem;
-    color: #737679;
+    color: #e5e7e9;
     text-align: left;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding-top: 50px;
     padding-left: 40px;
+}
+
+.keywords-container__keyword {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.3rem;
+    color: #31404e;
+    font-weight: 500;
+}
+
+.keywords-container__catchphrase {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #31404e;
 }
