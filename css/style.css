@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root {
+    --bgr-light: #e5e7e9;
+    --bgr-dark: #31404e;
+}
+
 .header--size {
     height: 750px;
     width: 100%;
@@ -10,7 +15,7 @@
 }
 
 .header--background {
-    background: linear-gradient(90deg,#31404e 80%,rgb(229, 231, 233) 80%)
+    background: linear-gradient(90deg, var(--bgr-dark) 80%,rgb(229, 231, 233) 80%)
 }
 
 .header-img {
@@ -33,7 +38,7 @@
 .keywords-container {
     height: 400px;
     width: 800px;
-    background: #e5e7e9;
+    background: var(--bgr-light);
     padding: 70px 180px;
 }
 
@@ -54,7 +59,7 @@
 
 .title--appearance {
     font-size: 2.3rem;
-    color: #e5e7e9;
+    color: var(--bgr-light);
     text-align: left;
     letter-spacing: 2px;
     padding-top: 50px;
@@ -64,7 +69,7 @@
 .keywords-container__keyword {
     font-family: 'Oswald', sans-serif;
     font-size: 3.3rem;
-    color: #31404e;
+    color: var(--bgr-dark);
     font-weight: 500;
 }
 
@@ -72,18 +77,56 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
-    color: #31404e;
+    color: var(--bgr-dark);
 }
 
 .introduction {
     width: 100%;
     height: 350px;
-    background-color: #e5e7e9;
+    background-color: var(--bgr-light);
 }
 
 .introduction__theme {
+    position: relative;
     width: 100%;
     height: 350px;
     background-image: url("../img/brickShape.png");
     background-repeat: no-repeat;
+}
+
+.introduction__title {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: var(--bgr-dark);
+}
+
+.introduction__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--bgr-dark);
+}
+
+.introduction__title--position {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+
+.introduction__text--position {
+    position: absolute;
+    top: 56%;
+    left: 37%;
+}
+
+.introduction__decor {
+    width: 15px;
+    height: 250px;
+    background-color: var(--bgr-dark);
+}
+
+.introduction__decor--position {
+    position: absolute;
+    top: 21%;
+    left: 28.6%;
 }
