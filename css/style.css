@@ -74,3 +74,16 @@
     font-weight: 300;
     color: #31404e;
 }
+
+.introduction {
+    width: 100%;
+    height: 350px;
+    background-color: #e5e7e9;
+}
+
+.introduction__theme {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/brickShape.png");
+    background-repeat: no-repeat;
+}
