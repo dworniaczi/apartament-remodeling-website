@@ -6,6 +6,7 @@
 :root {
     --bgr-light: #e5e7e9;
     --bgr-dark: #31404e;
+    --gold: #c69b6b;
 }
 
 .header--size {
@@ -50,19 +51,41 @@
     z-index: 9;
 }
 
-.title {
+.owner-name {
     height: 75px;
     width: 600px;
-    font-family: 'Oswald', sans-serif;
+    position: relative;
 }
 
-.title--appearance {
+.owner-name__content {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 26px;
+    padding-left: 40px;
+}
+
+.owner-name__content--appearance {
     font-size: 2.3rem;
-    color: var(--bgr-light);
+    font-weight: 500;
+    color: var(--gold);
     text-align: left;
     letter-spacing: 2px;
-    padding-top: 50px;
-    padding-left: 40px;
+    opacity: 70%;
+}
+
+.owner-name__decor {
+    width: 400px;
+    height: 1px;
+}
+
+.owner-name__decor--appearance {
+    background-color: var(--gold);
+    opacity: 50%;
+}
+
+.owner-name__decor--position {
+    position: absolute;
+    bottom: 0px;
+    left: 42px;
 }
 
 .keywords-container__keyword {
@@ -114,7 +137,7 @@
     position: relative;
     width: 100%;
     height: 350px;
-    background-image: url("../img/brickShape.png");
+    background-image: url("../img/brick-shape.png");
     background-repeat: no-repeat;
 }
 
@@ -124,7 +147,7 @@
     color: var(--bgr-dark);
 }
 
-.introduction__text, .content__description {
+.introduction__text, .content__description, .contact-information__item {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
@@ -173,7 +196,6 @@
 .item {
     width: 1300px;
     height: 320px;
-    /* background-color: violet; */
     position: relative;
 }
 
@@ -211,3 +233,63 @@
     font-size: 1.8rem;
 }
 
+.content__arrow {
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/arrow-right.png");
+}
+
+.contact-section {
+    width: 100%;
+    height: 350px;
+    background-color: var(--bgr-light);
+    position: relative;
+}
+
+.contact-information {
+    width: 1300px;
+    height: 250px;
+    background-color: var(--bgr-dark);
+}
+
+.contact-information--position {
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    text-align: center;
+    padding: 77px 0;
+}
+
+.contact-information__item {
+    color: var(--gold);
+}
+
+.contact-section__decor {
+    width: 1300px;
+    height: 250px;
+    background-image: url("../img/brick-shape-contact.png");
+}
+
+.contact-section__decor--position {
+    position: absolute;
+    top: 50px;
+    left: 110px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+}
+
+.footer--appearance {
+    background-color: var(--bgr-dark);
+    border-top: 3px solid var(--gold);
+    text-align: center;
+}
+
+.footer__content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gold);
+}
