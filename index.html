@@ -22,41 +22,69 @@
         <div class="header-img header-img--position"></div>
         <div class="header-arrow header-arrow--position"></div>
     </header>
-    <section>
-        <div class="introduction">
-            <div class="introduction__theme">
-                <h2 class="introduction__title introduction__title--position">MY EXPERTISE</h2>
-                <p class="introduction__text introduction__text--position">Jedno/dwa zdania na temat mojego doświadczenia/wykształcenia/umiejętnośći.</br>Jedno/dwa zdania na temat mojego doświadczenia/wykształcenia/umiejętnośći.</p>
-                <div class="introduction__decor introduction__decor--position"></div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="main-content main-content--size main-content--background">
-            <div class="item item--position">
-                <div class="content content--position">
-                    <h2 class="content__title">TYTUŁ 1</h2>
-                    <p class="content__description">Krótki opis sekcji</p>
-                    <div class="content__arrow"></div>
+    <main>
+        <section>
+            <div class="introduction">
+                <div class="introduction__theme">
+                    <h2 class="introduction__title introduction__title--position">MY EXPERTISE</h2>
+                    <p class="introduction__text introduction__text--position">Jedno/dwa zdania na temat mojego doświadczenia/wykształcenia/umiejętnośći.</br>Jedno/dwa zdania na temat mojego doświadczenia/wykształcenia/umiejętnośći.</p>
+                    <div class="introduction__decor introduction__decor--position"></div>
                 </div>
-                <img class="item__img item__img--position" src="img/item1.jpg"></img>
             </div>
-            <div class="item item--position">
-                <div class="content content--position">
-                    <h2 class="content__title">TYTUŁ 2</h2>
-                    <p class="content__description">Krótki opis sekcji</p>
+        </section>
+        <section>
+            <div class="main-content main-content--size main-content--background">
+                <div class="item item--position">
+                    <div class="content content--position">
+                        <h2 class="content__title">TYTUŁ 1</h2>
+                        <p class="content__description">Krótki opis sekcji</p>
+                        <div class="content__arrow content__arrow--position"></div>
+                    </div>
+                    <img class="item__img item__img--position" src="img/item1.jpg" alt=""></img>
                 </div>
-                <img class="item__img item__img--position" src="img/item2.jpg"></img>
-            </div>
-            <div class="item">
-                <div class="content content--position">
-                    <h2 class="content__title">TYTUŁ 3</h2>
-                    <p class="content__description">Krótki opis sekcji</p>
+                <div class="item item--position">
+                    <div class="content content--position">
+                        <h2 class="content__title">TYTUŁ 2</h2>
+                        <p class="content__description">Krótki opis sekcji</p>
+                        <div class="content__arrow content__arrow--position"></div>
+                    </div>
+                    <img class="item__img item__img--position" src="img/item2.jpg" alt=""></img>
                 </div>
-                <img class="item__img item__img--position" src="img/item3.jpg"></img>
+                <div class="item">
+                    <div class="content content--position">
+                        <h2 class="content__title">TYTUŁ 3</h2>
+                        <p class="content__description">Krótki opis sekcji</p>
+                        <div class="content__arrow content__arrow--position"></div>
+                    </div>
+                    <img class="item__img item__img--position" src="img/item3.jpg" alt=""></img>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section>
+            <div class="customers-opinions-container">
+                <div class="slideshow-container">
+                    <div class="slideshow-container__slide">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies, odio fringilla dictum porttitor, urna elit sagittis massa, vitae consectetur libero nisl ac erat. Aenean.</q>
+                    </div>
+                    <div class="slideshow-container__slide">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique cursus ultrices. Mauris sed quam enim. In feugiat, orci ut feugiat sagittis, lacus quam elementum lacus, sed tristique turpis metus ac mi. Proin in nisi id sapien sodales efficitur. Ut ex nunc, pulvinar vitae ultrices ac, iaculis vitae metus. Nam.</q>
+                    </div>
+                    <div class="slideshow-container__slide">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non orci eu mauris fringilla tincidunt.</q>
+                    </div>
+                    <div class="slideshow-container__slide">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique cursus ultrices. Mauris sed quam enim. In feugiat, orci ut feugiat sagittis, lacus quam elementum lacus, sed tristique turpis metus ac mi. Proin in nisi id sapien sodales efficitur. Ut ex nunc, pulvinar vitae ultrices ac, iaculis vitae metus. Nam.</q>
+                    </div>
+                </div>
+                <div class="dots-container">
+                    <span class="dots-container__dot" onclick="currentSlide(1)"></span>
+                    <span class="dots-container__dot" onclick="currentSlide(2)"></span>
+                    <span class="dots-container__dot" onclick="currentSlide(3)"></span>
+                    <span class="dots-container__dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+    </main>
     <section>
         <div class="contact-section">
             <div class="contact-information contact-information--position">
@@ -64,13 +92,12 @@
                 <p class="contact-information__item">twójemail@gmail.com</p>
                 <p class="contact-information__item">+48601555555</p>
             </div>
-            <div class="contact-section__decor contact-section__decor--position"></div>
         </div>
     </section>
     <footer class="footer footer--appearance">
         <p class="footer__content">&copy; 2020 Kacper Kusztelak</p>
         <p class="footer__content">Made by Tomasz Dworniczak</p>
     </footer>
-    <script src="" async defer></script>
+    <script src="js/app.js" async defer></script>
 </body>
 </html>

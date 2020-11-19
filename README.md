@@ -1,2 +1,3 @@
 # apartament-remodeling-website
-Project of an apartaent remodeling website - portfolio and services.
+Project of an apartment remodeling services website - showit platform.
+My first attempt to implement BEM methodology.
